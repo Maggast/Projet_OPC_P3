@@ -1,18 +1,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&family=Shrikhand&display=swap');
 
-html, body {
+html{
+    overflow-x: hidden;
+}
+ body {
     font-family: 'Roboto', sans-serif;
     height: 100%;
     margin: 0;
     padding: 0;
     cursor:pointer;
+    background-color:#F2F2F2;
 }
 *{
     box-sizing: border-box;
 }
 
-.logo{
-   font-family: 'Shrikhand';
+.logo_header{
+    font-family: 'Shrikhand';
+    margin-top: 20px;
+    margin-bottom:15px;
+}
+header{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
 }
 
- 
+.recherche_ville{
+    width:100%;
+    background-color:#E1E1E1; 
+    padding-top: 10px;
+    padding-bottom: 10px;
+} 
+.recherche_ville input{
+    border: none;
+    background-color:#E1E1E1;
+    font-weight: bold;
+    padding: 10px;
+    margin-left: 10px;
+    
+}
+header nav{
+    background-color:#FFF;
+    width:100%;
+}
+
+h1{
+    font-size:30px;
+}
+main{
+    display:flex;
+    flex-direction: column;
+    padding:20px;
+    
+   
+   
+  
+}
+main div{
+   
+    display:flex;
+    flex-direction: column;
+    background-color: #FFF;
+    border-radius: 15px 15px 15px 15px;
+    margin-top: 20px;
+}
+main div img{
+    object-fit: cover;
+    height:200px;
+}
+footer{
+    display:flex;
+    flex-direction: column;
+    background-color:#434343;
+    color:#FFF;
+    padding: 20px;
+    margin-top: 40px;
+    
+   
+}
+.logo_footer{
+    height:20px;
+    margin-bottom:15px;
+    color:#FFF;
+
+        
+    
+}
