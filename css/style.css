@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Shrikhand&display=swap');
 
 html{
     overflow-x: hidden;
@@ -10,28 +10,42 @@ html{
     padding: 0;
     cursor:pointer;
     background-color:#F2F2F2;
+   
 }
 *{
     box-sizing: border-box;
 }
 
 .logo_header{
-    font-family: 'Shrikhand';
-    margin-top: 20px;
-    margin-bottom:15px;
+    font-family: 'Shrikhand', cursive;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom:15px;  
+   
+}
+h1{
+    font-size:25px;
+    font-weight: 800;
+}
+p{
+    font-size:18px;
+    font-weight: 400;
+    color:#999999;
 }
 header{
     display:flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
+   
 }
-
 .recherche_ville{
     width:100%;
     background-color:#E1E1E1; 
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    box-shadow: inset 0px 2px 5px 0px #C1C1C1;
+  
 } 
 .recherche_ville input{
     border: none;
@@ -41,21 +55,81 @@ header{
     margin-left: 10px;
     
 }
+input:focus{
+    outline:none;
+    
+}
+.reservation{
+    padding:20px;
+    
+}
+.reservation h1{
+    padding:0 20px;
+}
+.explore_resto{
+    padding-bottom: 20px;
+    padding-top:20px;
+    
+}
+.submit{
+    color: #FFF;
+    padding:20px 30px;
+    font-weight: 600;
+    border-radius: 30px;
+    background: linear-gradient(to bottom right, #FF79DA ,#9356DC );
+    border:none;
+    box-shadow:-3px 5px 5px #C1C1C1;
+    margin-bottom:20px;
+}
 header nav{
     background-color:#FFF;
     width:100%;
+    text-align: left;
+    padding: 30px 30px 30px 20px;
+    
+    display:flex;
+    flex-direction: column;
+    align-content: space-around; 
+    
 }
-
-h1{
-    font-size:30px;
+header nav div{
+    width:100%;
+    background-color: #F2F2F2;
+    padding: 25px 30px 25px 20px;
+    margin:0 10px 20px 10px;
+    font-weight: 600;
+    border-radius: 25px;
+    box-shadow:-3px 5px 5px #C1C1C1;
+}
+header nav h1{
+    margin-bottom: 30px;
+}
+header nav .fa-circle{
+    color:#9356DC;
+    font-size:25px;
+    position:relative;
+    left:-35px;
+}
+header nav .fa-1, header nav .fa-2,header nav .fa-3{
+    color:#FFF;
+    font-size:13px;
+    position:relative;
+    left:-50px;
+    top:-5px;
+    font-family: 'Roboto', sans-serif;
+}
+header nav .fa-mobile-screen-button,header nav .fa-ellipsis-vertical,header nav .fa-bars,header nav .fa-store{
+    color:#999999;
+    font-size:20px;
+    position:relative;
+    left:-20px;
+   
 }
 main{
     display:flex;
     flex-direction: column;
     padding:20px;
     
-   
-   
   
 }
 main div{
@@ -84,7 +158,7 @@ footer{
     height:20px;
     margin-bottom:15px;
     color:#FFF;
-
-        
+    filter: brightness(30);
+    font-weight:bolder;  
     
 }
