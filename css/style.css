@@ -10,18 +10,15 @@ html{
     padding: 0;
     cursor:pointer;
     background-color:#F2F2F2;
-   
 }
 *{
     box-sizing: border-box;
 }
 
 .logo_header{
-    font-family: 'Shrikhand', cursive;
     width: 100%;
     padding-top: 20px;
-    padding-bottom:15px;  
-   
+    padding-bottom:15px;    
 }
 h1{
     font-size:25px;
@@ -36,8 +33,7 @@ header{
     display:flex;
     flex-direction: column;
     text-align: center;
-    align-items: center;
-   
+    align-items: center; 
 }
 .recherche_ville{
     width:100%;
@@ -55,21 +51,15 @@ header{
     margin-left: 10px;
     
 }
-input:focus{
-    outline:none;
-    
-}
 .reservation{
-    padding:20px;
-    
+    padding:20px;  
 }
 .reservation h1{
     padding:0 20px;
 }
 .explore_resto{
     padding-bottom: 20px;
-    padding-top:20px;
-    
+    padding-top:20px;  
 }
 .submit{
     color: #FFF;
@@ -85,12 +75,11 @@ header nav{
     background-color:#FFF;
     width:100%;
     text-align: left;
-    padding: 30px 30px 30px 20px;
+    padding: 30px 30px 50px 20px;
     
     display:flex;
     flex-direction: column;
-    align-content: space-around; 
-    
+    align-content: space-around;   
 }
 header nav div{
     width:100%;
@@ -123,42 +112,94 @@ header nav .fa-mobile-screen-button,header nav .fa-ellipsis-vertical,header nav 
     font-size:20px;
     position:relative;
     left:-20px;
-   
-}
+} 
 main{
     display:flex;
     flex-direction: column;
-    padding:20px;
-    
-  
+    padding:40px 20px 20px 20px;
 }
-main div{
-   
+main section{
     display:flex;
     flex-direction: column;
+    width:100%;
+    height:250px;
+    position: relative;
     background-color: #FFF;
     border-radius: 15px 15px 15px 15px;
-    margin-top: 20px;
+    margin-top: 20px; 
 }
-main div img{
-    object-fit: cover;
-    height:200px;
+main section img{
+    object-fit:cover;
+    width:100%;
+    height:180px;
+    border-radius: 15px 15px 0px 0px;
+    margin-bottom: 10px;   
+}
+.la_palette_du_gout{
+    object-position:0% 90%;  
+}
+.la_note_enchantee{
+    object-position:0% 60%; 
+}
+.a_la_francaise{
+    object-position:0% 90%;  
+}
+.le_delice-des_sens{
+    object-position:0% 90%;
+}
+figure{
+    width:100%;
+    margin:0;
+    position:relative;
+}
+figcaption{
+    background-color:#99E2D0;
+    color:#369e84;
+    font-weight:600;
+    text-align:center;
+    border-radius: 0;
+    padding-top: 6px;
+    width:90px;
+    height:30px;
+    font-size:15px;
+    position: absolute;
+    right:10px;
+    bottom:150px;    
+}
+.legende_carte{
+    position: relative;
+    margin-top: 0;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    font-size:18px;
+}
+main i{
+    font-size: 22px;
+    position:absolute;
+    right:15px;
+    bottom:30px; 
 }
 footer{
+    width:100%;
     display:flex;
     flex-direction: column;
+    line-height:25px;
     background-color:#434343;
     color:#FFF;
     padding: 20px;
-    margin-top: 40px;
-    
-   
+    margin-top: 40px; 
 }
 .logo_footer{
-    height:20px;
+    height:15px;
     margin-bottom:15px;
     color:#FFF;
     filter: brightness(30);
-    font-weight:bolder;  
-    
+    font-weight:bolder;    
+}
+footer i{
+    font-size: 12px;
+    margin-right: 10px;
+}
+.fa-utensils{
+    margin-right:15px;
 }
