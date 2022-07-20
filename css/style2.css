@@ -91,30 +91,36 @@ a{
 }
 .menu {
     margin: 15px;
+    display:flex;
+    flex-direction: column;
 }
 .menu div{
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
     width:100%;
+    height:auto;
     font-size: 15px;
     background-color: #FFF;
     border-radius: 15px;
-   
     margin-bottom: 15px;
-   
     box-shadow:-3px 5px 5px #C1C1C1;
     position: relative;
+    padding:10px;
+    
     
 }
  h3,p{
-    padding:0 10px 0 10px;
-    line-height: 5px;
+    padding:0 50px 0 10px;
+    margin-top: auto;
+    margin-bottom: auto;
 
  }
 .menu span{
     position:absolute;
     right:10px;
-    top:40px;
+    top:35px;
     font-weight: 600;
+    
 }
 
 .commander{

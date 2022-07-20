@@ -90,6 +90,13 @@ header{
     border-radius: 25px;
     box-shadow:-3px 5px 5px #C1C1C1;
 }
+.fonctionnement div:hover{
+    background-color:rgba(147, 86, 220,0.1);
+
+}
+.fa-mobile-screen-button:hover,.fa-store:hover{
+        color:#9356DC;
+}
 .fonctionnement h1{
     margin-bottom: 30px;
 }
@@ -183,12 +190,12 @@ figcaption{
 }
 .fa-regular{
     position: absolute;
-    top:20px;
+    bottom:20px;
     right:20px;
 }
 .fa-solid.fa-heart{
     position: absolute;
-    top:20px;
+    bottom:20px;
     right:20px;
     color:transparent;
     opacity:0;
