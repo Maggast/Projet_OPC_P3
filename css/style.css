@@ -181,21 +181,27 @@ figcaption{
 .legende_carte:first-letter{
     text-transform: uppercase;
 }
-.fa-regular::before{
+.fa-regular{
     position: absolute;
     top:20px;
     right:20px;
 }
-.fa-solid.fa-heart::before{
+.fa-solid.fa-heart{
     position: absolute;
     top:20px;
     right:20px;
-    color:#9356DC;
+    color:transparent;
     opacity:0;
 }
-.fa-solid.fa-heart:active::before ,.fa-solid.fa-heart:hover::before{
+.fa-solid.fa-heart:active ,.fa-solid.fa-heart:hover{
     opacity:1;
-    transition:all 800ms;
+    background:linear-gradient(to bottom right, #FF79DA,#9356DC);
+    -webkit-text-fill-opacity:0;
+    -webkit-background-clip:text;
+    transition:all 3s;
+    
+    
+    
 }
 
 footer{

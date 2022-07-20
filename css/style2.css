@@ -54,11 +54,27 @@ section.nom_resto{
 .nom_resto h1:first-letter{
     text-transform: uppercase;
 }
-.fa-heart{
+.fa-regular{
     font-size: 25px;
     padding-top: 25px;
     position:absolute;
     right:20px;
+}
+.fa-solid.fa-heart{
+    font-size: 25px;
+    padding-top: 25px;
+    position:absolute;
+    right:20px;
+    color:transparent;
+    opacity:0;
+}
+.fa-solid.fa-heart:active ,.fa-solid.fa-heart:hover{
+    opacity:1;
+    background:linear-gradient(to bottom right, #FF79DA,#9356DC);
+    -webkit-text-fill-opacity:0;
+    -webkit-background-clip:text;
+    transition:all 3s;
+    
 }
 a{
     text-decoration: none;
