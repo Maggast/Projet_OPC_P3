@@ -3,17 +3,17 @@
 html{
     overflow-x: hidden;
 }
-body {
+ body {
     font-family: 'Roboto', sans-serif;
     height: 100%;
     margin: 0;
     padding: 0;
     background-color:#F2F2F2;
+    
 }
 *{
     box-sizing: border-box;
 }
-
 /*debut loader*/
 
 .page_loader{
@@ -24,20 +24,17 @@ body {
 	height : 100%;
 	width : 100%;
 	opacity:0;
-	animation: page_loader 2s ease-in-out 0s 1 normal forwards;
-	
+	animation: page_loader 3s ease-in-out 0s 1 normal forwards;
+
 }
 @keyframes page_loader {
-	0% {
+	0%,99% {
 		opacity: 1;
 		cursor:wait;
         position :fixed;
         z-index: 99;
 	}
 
-	100% {
-		opacity: 0;
-	}
 }
 
 .page_loader div{
@@ -45,23 +42,25 @@ body {
 	font-family:'Shrikhand' ;
 	font-size:50px;
 	text-align: center;
+    text-shadow: black;
 	margin-top:auto;
 	margin-bottom: auto;
 
-	
+
 }
 
 .oh{
     margin-left: auto;
     color:#FF79DA ;
-    animation: oh 1s ease-out 0s 1 normal forwards;
-   
+    animation: oh 3s ease-out 0s 1 normal forwards;
+
 }
 @keyframes oh {
 	0% {
 		animation-timing-function: ease-in;
 		opacity: 1;
 		transform: translateX(-48px);
+       
 	}
 
 	24% {
@@ -106,13 +105,14 @@ body {
 
 .my{
 color:#9356DC ;
-animation: my 1s ease-out 0s 1 normal forwards;
+animation: my 3s ease-out 0s 1 normal forwards;
 }
 @keyframes my {
 	0% {
 		animation-timing-function: ease-in;
 		opacity: 1;
 		transform: translateY(-45px);
+       
 	}
 
 	24% {
@@ -157,7 +157,7 @@ animation: my 1s ease-out 0s 1 normal forwards;
 .food{
 margin-right: auto;
 color:#99E2D0;
-animation: food 1s ease-out 0s 1 normal forwards;
+animation: food 3s ease-out 0s 1 normal forwards;
 }
 @keyframes food {
 	0% {
@@ -173,6 +173,7 @@ animation: food 1s ease-out 0s 1 normal forwards;
 	40% {
 		animation-timing-function: ease-in;
 		transform: translateX(26px);
+        
 	}
 
 	65% {
@@ -203,12 +204,12 @@ animation: food 1s ease-out 0s 1 normal forwards;
 		animation-timing-function: ease-out;
 		opacity: 0;
 		transform: translateX(0px);
+       
 	}
 }
 
 /*fin loader*/
 
- 
 .logo_header{
     width: 100%;
     padding-top: 20px;
@@ -297,6 +298,7 @@ a:hover{
     background-color:rgba(147, 86, 220,0.1);
 
 }
+
 .fonctionnement div:hover :nth-child(3){
     color:#9356DC;
 }
@@ -414,6 +416,8 @@ figcaption{
     -webkit-background-clip:text;
     transition:all 3s;
     
+    
+    
 }
 
 footer{
@@ -451,6 +455,7 @@ footer a{
     .section{
         height:auto;
     }
+
     .section img{
         height: 300px;
     }
@@ -458,12 +463,11 @@ footer a{
         top:20px;
     }
     .fa-1,.fa-2,.fa-3{
-     
+
         left:-55px;
     }
 }
 @media screen and (min-width : 768px)  {
-
     body{
         display: block;
     }
@@ -488,12 +492,12 @@ footer a{
         width:60%;
         margin-left:auto ;
         margin-right:auto;
-        
     }
     .fa-1,.fa-2,.fa-3{
-    
+
+
         left:-55px;
-        
+
     }
     .fa-circle{
         left:-35px;
@@ -532,7 +536,9 @@ footer a{
     }
     footer div{
         margin: 30px;
-        
+
     }
 
-}
+} 
+    
+

@@ -116,6 +116,33 @@ a:hover{
     
     
 }
+.e1,.p1,.d1{
+    animation: menu 1.5s ease 0s 1 normal forwards;
+
+}
+.e2,.p2,.d2{
+    animation: menu 1.5s ease 150ms 1 normal forwards;
+}
+.e3,.p3,.d3{
+    animation: menu 1.5s ease 300ms 1 normal forwards;
+}
+.e4,.p4,.d4{
+    animation: menu 1.5s ease 450ms 1 normal forwards;
+}
+
+@keyframes menu {
+	0% {
+		opacity: 0;
+        transform: translateY(10px);
+		
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
  h3,p{
     padding:0 50px 0 10px;
     margin-top: auto;
@@ -128,8 +155,8 @@ a:hover{
     top:35px;
     font-weight: 600;
     
-
 }
+
 .commander{
     display:flex;
     width:100%;
@@ -150,7 +177,7 @@ a:hover{
     margin-top: 50px;
     text-align: center;
     font-weight: 600;
-   
+    width:180px;
 
 }
 footer{
@@ -198,7 +225,7 @@ footer a{
 @media screen and (min-width : 768px)  {
     main img{
         height: 500px;
-       
+
     }
 
     footer{
@@ -231,6 +258,6 @@ footer a{
     }
     footer div{
         margin: 30px;
-        
+
     }
 }
