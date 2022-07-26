@@ -42,7 +42,6 @@ html{
 	font-family:'Shrikhand' ;
 	font-size:50px;
 	text-align: center;
-    text-shadow: black;
 	margin-top:auto;
 	margin-bottom: auto;
 
@@ -215,7 +214,7 @@ animation: food 3s ease-out 0s 1 normal forwards;
     padding-top: 20px;
     padding-bottom:15px;    
 }
-h1{
+h1,h2{
     font-size:25px;
     font-weight: 800;
     
@@ -268,7 +267,7 @@ header{
     box-shadow:-3px 5px 5px #C1C1C1;
     margin-bottom:20px;
 }
-input:hover{
+.submit:hover{
     opacity:0.6;
     box-shadow:-3px 5px 5px hsl(0, 0%, 20%);
 

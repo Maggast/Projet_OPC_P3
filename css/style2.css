@@ -97,9 +97,12 @@ a:hover{
     margin-top:40px;
 }
 .menu {
+    position:relative;
     margin: 15px;
     display:flex;
     flex-direction: column;
+    
+    
 }
 .menu div{
     display: flex;
@@ -112,22 +115,19 @@ a:hover{
     margin-bottom: 15px;
     box-shadow:-3px 5px 5px #C1C1C1;
     position: relative;
-    padding:10px;
-    
+    overflow:hidden;
     
 }
+
 .e1,.p1,.d1{
-    animation: menu 1.5s ease 0s 1 normal forwards;
+    animation: menu 1s ease 0s 1 normal forwards;
 
 }
 .e2,.p2,.d2{
-    animation: menu 1.5s ease 150ms 1 normal forwards;
+    animation: menu 1s ease 150ms 1 normal forwards;
 }
 .e3,.p3,.d3{
-    animation: menu 1.5s ease 300ms 1 normal forwards;
-}
-.e4,.p4,.d4{
-    animation: menu 1.5s ease 450ms 1 normal forwards;
+    animation: menu 1s ease 300ms 1 normal forwards;
 }
 
 @keyframes menu {
@@ -143,18 +143,113 @@ a:hover{
 	}
 }
 
- h3,p{
-    padding:0 50px 0 10px;
+p{
+    
     margin-top: auto;
     margin-bottom: auto;
 
- }
-.menu span{
-    position:absolute;
-    right:10px;
-    top:35px;
+}
+strong{
     font-weight: 600;
+    font-size:20px ;
+}
+.menu div .texte{
+    width:80%;
+    padding:10px;
+    line-height: 30px;
+    box-shadow:none;
+    margin-bottom: 0;
+
     
+ }
+.prix{
+    position:absolute;
+    right:30px;
+    bottom:20px;
+    font-weight: 800;
+    
+}
+.fa-solid.fa-circle-check{
+    position:absolute;
+    font-size:30px ;
+    top:30px;
+    right:-25px;
+    opacity:0;
+    border-radius: 50px;
+    background-color: #99E2D0;
+    color: white; 
+    z-index: 50;  
+    
+}
+.carre{
+    position:absolute;
+    width:70px;
+    right:-70px;
+    background-color: #99E2D0;
+    height:100%;
+    padding-top: 50px;
+}
+.menu div:hover :nth-child(1){
+    animation: texte 1s ease 50ms  normal forwards;
+}
+@keyframes texte {
+	0%{
+        width:80%;
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow: ellipsis;
+    }
+    100%{
+		width:62%;
+        overflow:hidden;
+        white-space:nowrap;
+        text-overflow: ellipsis;
+     }
+}
+.menu div:hover :nth-child(2) {
+    animation: prix 1s ease 50ms  normal forwards;
+    
+}
+@keyframes prix {
+	0% {
+		transform: translateX(0);
+        
+    }
+	100% {
+		transform: translateX(-210%);
+        
+	}
+}
+.menu div:hover :nth-child(3) {
+    animation: check 1s ease 0s  normal forwards;
+   
+}
+@keyframes check {
+	0% {
+		opacity:1;
+		transform: translateX(0) rotate(0);      
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(-150%) rotate(360deg);    
+        
+	}
+}
+
+.menu div:hover :nth-child(4) {
+    animation: carre 1s ease 0s  normal forwards;
+}
+@keyframes carre {
+	0% {
+		opacity:1;
+		transform: translateX(0);   
+        
+	}
+	100% {
+		opacity: 1;
+		transform: translateX(-100%);   
+        
+	}
 }
 
 .commander{
