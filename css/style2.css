@@ -156,7 +156,7 @@ strong{
 .menu div .texte{
     width:80%;
     padding:10px;
-    line-height: 30px;
+    line-height: 20px;
     box-shadow:none;
     margin-bottom: 0;
 
@@ -165,14 +165,14 @@ strong{
 .prix{
     position:absolute;
     right:30px;
-    bottom:20px;
+    bottom:10px;
     font-weight: 800;
     
 }
 .fa-solid.fa-circle-check{
     position:absolute;
     font-size:30px ;
-    top:30px;
+    top:15px;
     right:-25px;
     opacity:0;
     border-radius: 50px;
@@ -345,6 +345,12 @@ footer a{
         width:100%;
         margin-top: 50px;
         margin-bottom: 30px;
+    }
+    .prix{
+        bottom:20%;
+    }
+    .fa-solid.fa-circle-check{
+        top:30%;
     }
     footer{
         align-items:flex-end;
